@@ -5,12 +5,10 @@ public class CountX {
             return 0;
         }
         //recursive base
-        else{
-            if(str.charAt(0)=='x'){
+        else if(str.charAt(0)=='x'){
                 return 1 + countX(str.substring(1));
-            }else{
-                return countX(str.substring(1));
             }
+        return countX(str.substring(1));    //return countX(str.substring(1));
         }
     }
-}
+
