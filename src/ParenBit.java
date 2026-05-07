@@ -1,8 +1,10 @@
 public class ParenBit {
     public String parenBit(String str){
+        //base case
         if(str.length()<2 || !str.contains("(")){
             return "";
         }
+        //recursive case
         else{
             if(str.startsWith("(") && str.endsWith(")")){
                 return str;
