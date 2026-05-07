@@ -4,6 +4,7 @@ public class CountHi {
         if(str.length()<2){
             return 0;
         }
+        //recursive case
         else if(str.substring(0,2).equals("hi")){
             return 1 + countHi(str.substring(2));
         }
