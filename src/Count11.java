@@ -1,7 +1,7 @@
 public class Count11 {
     public int count11(String str){
         //base case
-        if(str.length()==0){
+        if(str.length()<2){
             return 0;
         }
         //recursive case
