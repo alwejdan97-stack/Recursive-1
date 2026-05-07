@@ -1,11 +1,13 @@
 public class EndX {
     public String endX(String str){
+        //base case
         if(str.length()==0){
             return "";
         }
+        //recursive case
         else{
             if(str.charAt(0)=='x'){
-                return endX(str.substring(1))+1;
+                return endX(str.substring(1))+"x";
             }
                 return str.charAt(0)+endX(str.substring(1));
         }
